@@ -9,36 +9,41 @@
 
   <!--for the game-->
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <canvas width="986" height="494" id="mazecanvas">Can't load the maze game, because your browser doesn't support HTML5.</canvas>
+
 
 </head>
 
 <body ng-app="players" ng-controller="MainCtrl">
-  <div class="row">
+  <div class=" row ">
 
-    <div class="col-sm-4 col-sm-offset-.5">
-      <div class="page-header">
+    <div class="col-sm-4 col-sm-offset-.5 ">
+      <div class="page-header ">
         <h1>Login </h1>
       </div>
 
-      <form ng-submit="addPlayer()" style="margin-top30px;">
-        <input type="text" ng-model="formContent"></input>
-        <button type="submit">Add User</button>
+      <form ng-submit="addPlayer() " style="margin-top30px; ">
+        <input type="text " ng-model="formContent "></input>
+        <button type="submit ">Add User</button>
       </form>
       <div>
         {{test}}
       </div>
-      <div ng-repeat="player in players | orderBy: '-points'">
-        <span class="glyphicon glyphicon-remove" ng-click="delete(player)"></span> {{player.player}} - Score: {{player.points}}
+      <div ng-repeat="player in players | orderBy: '-points' ">
+        <span class="glyphicon glyphicon-remove " ng-click="delete(player) "></span> {{player.player}} - Score: {{player.points}}
       </div>
     </div>
 
-    <div class="auto-fit">
+    <div class="auto-fit ">
 
       <h1>Game Screen</h1>
       <h2>this is a test of the new thing we want to make :)</h2>
       <h3>{{user}}</h3>
+      <div class="gameCanvas">
+        <!--{{gameCanvas}}-->
+      </div>
+      <!--<canvas width="500 " height="400 " id="gamecanvas">Can't load the maze game, because your browser doesn't support HTML5.</canvas>-->
     </div>
+
   </div>
 </body>
 
