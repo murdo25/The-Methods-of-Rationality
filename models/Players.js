@@ -5,7 +5,7 @@ var Schema = new mongoose.Schema({
   points: { type: Number, default: 0 },
 });
 
-Schema.methods.upvote = function(cb) {
+Schema.methods.award_point = function(cb) {
   this.points += 1;
   this.save(cb);
 };

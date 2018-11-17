@@ -9,13 +9,12 @@
 
   <!--for the game-->
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-
+  <!--<script src="/socket.io/socket.io.js"></script>-->
 
 </head>
 
 <body ng-app="players" ng-controller="MainCtrl">
   <div class=" row ">
-
     <div class="col-sm-4 col-sm-offset-.5 ">
       <div class="page-header ">
         <h1>Login </h1>
@@ -33,13 +32,12 @@
       </div>
     </div>
 
-    <div class="auto-fit ">
+    <div class="auto-fit" id="game_screen_div">
 
       <h1>Game Screen</h1>
-      <h2>this is a test of the new thing we want to make :)</h2>
       <h3>{{user}}</h3>
-      <div class="gameCanvas">
-        <!--{{gameCanvas}}-->
+      <div id="gameCanvas">
+        {{gameCanvas}}
       </div>
       <!--<canvas width="500 " height="400 " id="gamecanvas">Can't load the maze game, because your browser doesn't support HTML5.</canvas>-->
     </div>

@@ -39,7 +39,7 @@ router.get('/players/:player', function(req, res) {
 });
 
 router.put('/players/:player/points', function(req, res, next) {
-  req.player.points(function(err, player) {
+  req.player.award_point(function(err, player) {
     if (err) { return next(err); }
     res.json(player);
   });
