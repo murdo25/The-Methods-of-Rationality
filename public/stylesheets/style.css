@@ -1,18 +1,40 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: darkgrey;
+  background-color: #990A3C;
 }
 
 a {
   color: #00B7FF;
 }
 
+h1,
+h3 {
+  color: #FF669C;
+}
+
+.users {
+  color: #FF669C;
+}
+
+.player {
+  padding: 15px;
+  margin: 15px;
+  background-color: #690021;
+  border-radius: 15px;
+}
+
 input {
-  background-color: lightgrey;
+  background-color: #fff;
 }
 
 canvas {
-  border: 1px solid #d3d3d3;
-  background-color: #f1f1f1;
+  border: 10px solid #44E552;
+  background-color: #44E552;
+  border-radius: 10px;
+}
+
+button {
+  border-radius: 10px;
+  background-color: white;
 }
